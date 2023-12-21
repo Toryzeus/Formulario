@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="insertar_cv.php" method="GET">
+        <fieldset>
+            <legend>Dades personals</legend>
+                <ul>
+                    <li>
+                        <label for="Nom">Nom</label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Nom">
+                        &emsp;
+                        <label for="Comnoms">Comnoms</label>
+                        <input type="text" name="Comnoms" id="Comnoms" placeholder="Comnoms">
+                    </li>
+                    <li>
+                        <label for="DNI">DNI</label>
+                        <input type="text" name="DNI" id="DNI" placeholder="P.ex45987989X">
+                    </li> 
+                    <li>
+                        <label for="User">Username</label>
+                        <input type="text" name="Username" id="User">
+                        &emsp;
+                        <label for="Clau">Clau</label>
+                        <input type="password" name="Clau" id="Clau">
+                        &emsp;
+                        <label for="Reclau">Repetir Clau</label>
+                    <input type="password" name="Reclau" id="Reclau"> 
+                    </li> 
+                    <li>
+                        <label for="email">E-Correu</label>
+                        <input type="email" name="email" id="email">
+                        &emsp;
+                        <label for="edad">Franja D'edat</label>
+                        <select name="edad" id="edad">
+                            <option value="Menor de 16 anys" selected="selected">Menor de 16 anys</option>
+                            <option value="Fa 87 anys">Fa 87 anys</option>
+                            <option value="2 dies enterets">2 dies enterets</option>
+                        </select>
+                    </li> 
+                    <li>
+                        <label for="Sexe">Sexe</label>
+                        <input type="radio" value="Home" name="Sexe" id="Sexe" checked="checked">
+                        Home
+                        <input type="radio" value="Dona" name="Sexe" id="Sexe">
+                        Dona
+                    </li>
+                    <li>
+                        <label for="copais">Codi País</label>
+                        <input type="text" name="copais" id="copais" placeholder="Codi del pais dos caracters">
+                        <label for="cozip">Codi ZIP</label>
+                        <input type="text" name="cozip" id="cozip" placeholder="El codi postal">
+                        &emsp;
+                        <label for="image">Image Personal</label>
+                        <input type="file" name="image" id="image">
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Altres dade d'interes</legend>
+            <li>
+            <label for="interesos">Interesos</label>
+            </li>
+            <li>
+            <input type="checkbox" name="interesos" id="interesos" value="CSS">CSS
+            <input type="checkbox" name="interesos" id="interesos" value="HTML5">HTML5
+            <input type="checkbox" name="interesos" id="interesos" value="Javascript">Javascript
+            </li>
+            <li>
+            <label for="coneixements">Coneixements</label>
+            </li>
+            <li>
+            <input type="checkbox" name="coneixements" id="coneixements" value="Xarxes Socials">Xarxes Socials
+            <input type="checkbox" name="coneixements" id="coneixements" value="Programacio HTML">Programacio HTML
+            <input type="checkbox" name="coneixements" id="coneixements" value="Programacio CSS">Programacio CSS
+            <input type="checkbox" name="coneixements" id="coneixements" value="Disseny">Disseny
+            </li>
+            <li>
+            <label for="Comentari">Comentaris:</label><br>
+            </li>
+            <textarea name="Comentari" id="Comentari" cols="40" rows="5" placeholder="Aqui disposeu d'espai per escriure"></textarea>
+        </fieldset>
+        <input type="submit" name="enviar">
+        <input type="reset" name="esborrar" value="Esborrar">
+        </form>
+</body>
+</html>

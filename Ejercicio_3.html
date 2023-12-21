@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="insertar_cv.php" method="GET">
+        <h1>Rellena tu CV</h1>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <ul>
+                <li>
+                    <label for="provincia">Provincia</label>
+                </li>
+                <li>
+                    <select name="provincia" id="provincia">
+                        <option value="" selected="selected">Selecciona</option>
+                        <option value="Narnia">Narnia</option>
+                        <option value="Pais de las maravillas">Pais de las maravillas</option>
+                        <option value="Mi casa">Mi casa</option>
+                    </select>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="fecha">Fecha de nacimiento</label>
+                </li>
+                <li>
+                    <input type="date" name="fecha" id="fecha" maxlength="2" size="1">
+                </li>
+                <li>
+                    <label for="temas">Temas de interes</label>
+                </li>
+                <li>
+                    <select name="temas" name="temas" id="temas" multiple>
+                        <option value="Administracion de Base de datos">Administracion de Base de datos</option>
+                        <option value="Analisis y programacion">Analisis y programacion</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Calidad">Calidad</option>
+                        <option value="ERP, CRM, Business Intelligence">ERP, CRM, Business Intelligence</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

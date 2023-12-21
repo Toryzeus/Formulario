@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="insertar_cv.php" method="GET">
+        <h1>Rellena tu CV</h1>
+        <li>
+            <label for="Nombre">Nombre:</label>
+        </li>
+        <li>
+            <input type="text" name="Nombre" id="Nombre" maxlength="30" size="30"/>
+        </li>
+        <li>
+            <label for="Apellidos">Apellidos:</label>
+        </li>
+        <li>
+            <input type="text" name="Apellidos" id="Apellidos" maxlength="80" size="30"/>
+        </li>
+        <li>
+            <label for="Contraseña">Contraseña:</label>
+        </li>
+            <input type="password" name="Contraseña" value="" maxlength="10" size="30"/>
+        <li>
+            <label for="DNI">DNI</label>
+        </li>
+            <input type="text" name="DNI" value="" maxlength="9" size="9"/>
+        <li>
+            <label for="Sexo">Sexo</label>
+        </li>
+            <input type="radio" name="Sexo" value="Hombre" checked="checked"/>
+            Hombre
+        <li>
+            <input type="radio" name="Sexo" value="Mujer"/>
+            Mujer
+        </li>
+        <li>
+            <label for="foto">Incluir mi foto</label>
+            <input type="file" name="foto"/>
+        </li>
+        <li>
+            <label for="sub">Suscribirme al boletin de novedades</label>
+            <input type="checkbox" name="sub" checked="checked"/>
+        </li>
+        <li>
+            <input type="submit" name="guardar" value="Guardar Cambios"/>
+            <input type="reset" name="borrar" value="Borrar los datos introducidos">
+        </li>
+    </form>
+</body>
+</html>
